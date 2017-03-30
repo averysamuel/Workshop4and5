@@ -8,8 +8,9 @@ export default class Comment extends React.Component {
           PIC
         </div>
         <div className="media-body">
-          <a href="#">Someone Else</a> hope everything is ok!
-          <br /><a href="#">Like</a> · <a href="#">Reply</a> · 20 hrs
+          <a href="#">{this.props.author}</a> {this.props.children}
+          <br /><a href="#">Like</a> · <a href="#">Reply</a> ·
+            {this.props.postDate}
         </div>
       </div>
     )
